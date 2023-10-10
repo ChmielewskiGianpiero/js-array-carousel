@@ -10,20 +10,47 @@ img {
     height: 500px;
 }
 
-#app{
+.app{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.carousel {
+.container {
     margin: auto;
     max-width: 50%;
 }
 
+.position-relative{
+    position: relative;
+}
 
-.debug #app,
+.btn-up,
+.btn-down{
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-color: lightgray
+}
+
+.btn-up{
+    position: absolute;
+    top: 235px;
+    left: 950px;
+}
+
+.btn-down{
+    position: absolute;
+    bottom: 235px;
+    left: 950px;
+
+}
+
+
+.debug .app,
 .debug .carousel{
     border: 1px solid black;
 }
