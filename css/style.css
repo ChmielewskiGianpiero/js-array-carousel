@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    aspect-ratio: 2;
+    object-fit: cover;
+    height: 500px;
+}
+
+#app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel {
+    margin: auto;
+    max-width: 50%;
+}
+
+
+.debug #app,
+.debug .carousel{
+    border: 1px solid black;
+}
