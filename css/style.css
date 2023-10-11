@@ -5,9 +5,18 @@
 }
 
 img {
-    aspect-ratio: 2;
+    max-width: 100%;
+}
+
+.carousel-item {
+    aspect-ratio: 21/9;
     object-fit: cover;
-    height: 500px;
+    display: none;
+    width: 100%;
+}
+
+.active {
+    display: block;
 }
 
 .app{
@@ -26,27 +35,25 @@ img {
     position: relative;
 }
 
-.btn-up,
-.btn-down{
-    font-size: 25px;
-    border-radius: 50%;
-    border: none;
-    width: 30px;
-    height: 30px;
-    background-color: lightgray
+.btn {
+	position: absolute;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: lightgray;
+	left: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    
 }
 
 .btn-up{
-    position: absolute;
-    top: 235px;
-    left: 950px;
+    top: 320px;
 }
 
 .btn-down{
-    position: absolute;
-    bottom: 235px;
-    left: 950px;
-
+    bottom: 320px;
 }
 
 
